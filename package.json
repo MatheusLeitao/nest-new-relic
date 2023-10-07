@@ -1,10 +1,12 @@
 {
-  "name": "nest-new-relic",
-  "version": "0.0.1",
+  "name": "nestjs-new-relic",
+  "version": "0.0.0",
   "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "author": "Matheus Leitão",
+  "private": false,
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -20,13 +22,14 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0",
-    "@nestjs/platform-express": "^9.0.0",
-    "reflect-metadata": "^0.1.13",
+    "newrelic": "^11.1.0",
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
+    "@nestjs/common": "^9.0.0",
+    "reflect-metadata": "^0.1.13",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/platform-express": "^9.0.0",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
